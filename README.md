@@ -24,3 +24,4 @@ This is a template repository. Its purpose is to be used in new projects that us
 - Chai snippets
 - ES6 Mocha Snippets
 - ESLint
+- Prettier
