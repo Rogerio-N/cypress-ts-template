@@ -2,7 +2,7 @@ import { IUserFixture } from './../models/users.d'
 import users from './users.json'
 
 const allUsers: IUserFixture = {
-    ...users
+    ...users,
 }
 
 export default allUsers
