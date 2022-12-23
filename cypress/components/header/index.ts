@@ -1,11 +1,12 @@
 import HeaderText from './header-models/texts'
 
-export default class Header {
+class Header {
 	private elements = {
-		linkCreateAccount: () => cy.findByText(HeaderText.CREATE_ACCOUNT),
+		linkCreateAccount: () =>
+			cy.get('header').contains(HeaderText.CREATE_ACCOUNT),
 	}
 
-	clickLinkCreateAccount(): void {
+	clickLinkCreateAccount() {
 		this.elements.linkCreateAccount().click()
 	}
 
@@ -13,3 +14,5 @@ export default class Header {
 		return this.elements.linkCreateAccount()
 	}
 }
+
+export default new Header()
