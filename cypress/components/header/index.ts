@@ -4,6 +4,7 @@ class Header {
 	private elements = {
 		linkCreateAccount: () =>
 			cy.get('header').contains(HeaderText.CREATE_ACCOUNT),
+		linkLogin: () => cy.get('header').contains(HeaderText.SIGN_IN),
 	}
 
 	clickLinkCreateAccount() {
@@ -12,6 +13,10 @@ class Header {
 
 	getLinkCreateAccount() {
 		return this.elements.linkCreateAccount()
+	}
+
+	clickLinkLogin() {
+		this.elements.linkLogin().click()
 	}
 }
 

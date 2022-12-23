@@ -18,5 +18,10 @@
             "number": "number",
             "zipcode": "4635402"
         }
+    },
+    "roni": {
+        "name": "random name",
+        "email": "roni_cost@example.com",
+        "password": "roni_cost3@example.com"
     }
 }
