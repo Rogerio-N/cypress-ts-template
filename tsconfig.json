@@ -8,7 +8,8 @@
     "module": "commonjs",
     "types": [
       "cypress", 
-      "node"
+      "node",
+      "@testing-library/cypress"
     ],
     "moduleResolution": "node",
     "esModuleInterop": true,
