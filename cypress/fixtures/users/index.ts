@@ -1,5 +1,5 @@
-import { IUserFixture } from './../../models/users.d'
-import users from './users.json'
+import { IUserFixture } from './users'
+import users from './usersData'
 
 const allUsers: IUserFixture = {
 	...users,

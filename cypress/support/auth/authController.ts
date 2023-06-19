@@ -1,4 +1,4 @@
-import authService from './auth-service'
+import authService from './authService'
 
 class AuthController {
 	login(email: string, password: string) {

@@ -1,4 +1,4 @@
-import HeaderText from './header-models/texts'
+import HeaderText from './headerTextEnum'
 
 class Header {
 	private elements = {
