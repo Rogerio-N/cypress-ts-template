@@ -1,10 +1,8 @@
-import HeaderText from './headerTextEnum'
-
-class Header {
+class HeaderPage {
 	private elements = {
 		linkCreateAccount: () =>
-			cy.get('header').contains(HeaderText.CREATE_ACCOUNT),
-		linkLogin: () => cy.get('header').contains(HeaderText.SIGN_IN),
+			cy.get('header').findByText('Create an Account'),
+		linkLogin: () => cy.get('header').findByText('Sign In'),
 	}
 
 	clickLinkCreateAccount() {
@@ -20,4 +18,4 @@ class Header {
 	}
 }
 
-export default new Header()
+export default HeaderPage
