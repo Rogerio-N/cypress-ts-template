@@ -23,6 +23,7 @@
   },
   "include": [
     "**/*.ts", 
+    "cypress/support/cypress.d.ts", 
   ],
   "exclude": [
     "node_modules"
