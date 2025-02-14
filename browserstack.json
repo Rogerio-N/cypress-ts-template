@@ -1,0 +1,19 @@
+{
+    "auth": {
+        "username": "BROWSERSTACK_USERNAME",
+        "access_key": "BROWSERSTACK_ACCESS_KEY"
+    },
+	"run_settings": {
+		"cypress_config_file": "./cypress.config.ts"
+	},
+	"testObservability": true,
+	"browserstackAutomation": false,
+	"testObservabilityOptions": {
+		"projectName": "Cypress Testing",
+		"buildName": "Build 1",
+		"buildTag": ["Cypress", "Typescript", "1.0.0"]
+	},
+    "connection_settings": {
+        "local": true
+    }
+}

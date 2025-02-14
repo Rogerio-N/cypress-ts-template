@@ -24,5 +24,8 @@
     "eslint-plugin-promise": "^7.2.1",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.30.0"
   }
 }
