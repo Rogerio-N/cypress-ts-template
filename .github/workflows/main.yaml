@@ -4,8 +4,15 @@ on: push
 
 jobs:
   cypress-run:
+    name: Cypress run
     runs-on: ubuntu-24.04
     steps:
+      - name: 'Browserstack setup'
+        uses: browserstack/github-actions/setup-env@master
+        with:
+          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
