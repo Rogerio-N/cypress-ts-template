@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "cypress run",
+    "start:bs": "browserstack-cypress run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
