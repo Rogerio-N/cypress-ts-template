@@ -7,6 +7,7 @@ jobs:
     name: Cypress run
     runs-on: ubuntu-24.04
     steps:
+
       - name: 'Browserstack setup'
         uses: browserstack/github-actions/setup-env@master
         with:
@@ -15,9 +16,9 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
-        with:
-          start: npm start
+      
+      - name: 'Install dependencies'
+        uses: npm install
+
+      - name: 'Run test'
+        run: npm run start:bs
