@@ -3,6 +3,9 @@ package-lock.json
 
 dist/
 
+#Browsertack
+log/
+
 #Cypress
 cypress/videos
 cypress/screenshots

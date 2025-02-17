@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "cypress run",
+    "start": "cypress run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
