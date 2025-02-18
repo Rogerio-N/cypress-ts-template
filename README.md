@@ -1,5 +1,7 @@
 # Cypress Template
 
+![example workflow](https://github.com/Rogerio-N/cypress-ts-template/actions/workflows/main.yaml/badge.svg)  
+
 ![Cypress](https://img.shields.io/badge/Cypress-black?style=for-the-badge&logo=cypress&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/Typescript-blue?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node](https://img.shields.io/badge/Node-red?style=for-the-badge&logo=npm&logoColor=white)
@@ -12,16 +14,17 @@ This is a template repository. Its purpose is to be used in new projects that us
 
 ### Setup
 
-1 - Open the project and install its dependencies, to do this run the command in the terminal: `npm install`
+1 - Install dependencies: `npm install`
 
-2 - Once the installation finishes, you can open the cypress window. Run the command: `npx cypress open` and you are ready to go
+2 - To run locally: `npm run start:local`
 
-### Optional
+### Setup browserstack (optional)
 
-1 - Use the following extensions in VScode:
+1 - Create a browserstack account (a free plan is already ok) and go to [profile details](https://www.browserstack.com/accounts/profile/details)
 
-- Auto Import
-- Chai snippets
-- ES6 Mocha Snippets
-- ESLint
-- Prettier
+2 - Create the enviroment variable BROWSERSTACK_USERNAME with the username on profile details
+
+3 - Create the environment vairable BROWSERSTACK_ACCESS_KEY with the access key on profile details
+
+4 - To run the test locally and publish the results on browserstack run `npm run start`
+
